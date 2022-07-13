@@ -1,2 +1,2 @@
-<h1>pagina de pruebas<h1>
+<h1>PAGINA DE PRUEBAS<h1>
 <p>Esta pagina es de prueba para probar las nuevas herramientas que voy aprendiendo. (Este repositorio no sera la entrega final de mi proyecto, su uso sera solo para evaluaciones).<p>

@@ -1,0 +1,19 @@
+{
+  "name": "pruebas",
+  "version": "1.0.0",
+  "description": "<h1>PAGINA DE PRUEBAS<h1>\r <p>Esta pagina es de prueba para probar las nuevas herramientas que voy aprendiendo. (Este repositorio no sera la entrega final de mi proyecto, su uso sera solo para evaluaciones).<p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeikerM/Pruebas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeikerM/Pruebas/issues"
+  },
+  "homepage": "https://github.com/JeikerM/Pruebas#readme"
+}

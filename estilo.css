@@ -18,6 +18,8 @@ body{
 .encabezado img{
     width: 900px;
     height: 300px;
+    border: 10px;
+
 }
 .encabezado__img{
     display: flex;
@@ -25,8 +27,11 @@ body{
 }
 .menu{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 
+}
+.menu__contenedor{
+    background-color: rgb(49, 66, 66);
 }
 .menu ul{
     display: flex;
@@ -36,7 +41,6 @@ body{
 margin: 5px;
 text-decoration:none;
 list-style:none;
-background-color: black;
 padding: 1rem;
 }
 .menu a{
@@ -51,7 +55,25 @@ nav li:hover{
 nav a:hover{
     color: black;
 }
+ .container-fluid {
+    display:flex ;
+    justify-content:left;
+    font-weight: 700;
+ }
+ .navbar{
+    background-color: transparent;
+    text-align: center;
+ }
 
+ .navbar a{
+    color: rgb(2, 2, 2);
+ }
+ .card {
+    background-color: brown !important;
+ }
+ .btn-primary{
+    background-color: blueviolet !important;
+ }
 .etiqueta__padre{
     display: grid;
     grid-template-areas: 
@@ -84,9 +106,17 @@ footer{
 .main img{
     width: 30%;
     margin-bottom: 100px;
-    transform: translate(300px, 1px);
-    transform: rotate(-10deg);
+/*     transform: translate(300px, 1px);
+    transform: rotate(-10deg); */
 
+}
+.carousel{
+    width: 50%;
+}
+.carousel__flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .nosotros__texto{
    line-height: 30px;
@@ -108,10 +138,16 @@ footer{
     margin: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     
 }
-.oferta img{
+.oferta__flex{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
+}
+/* .oferta img{
     width: 80%;
    display: block;
    margin: auto;
@@ -141,7 +177,7 @@ footer{
         border: dashed 7px cornflowerblue;
     }
 }
-.oferta__imagenes{
+ */.oferta__imagenes{
     display: flex;
     flex-direction: column;
 }
@@ -149,7 +185,13 @@ footer{
     text-align: center;
     margin: 1rem;
     color: white;
+    margin-top: 100px;
+
 }
+.card{
+    margin-bottom: 40px;
+}
+
 /* footer */
 .contactanos{
     background-color: black;
@@ -232,10 +274,14 @@ footer{
         display: flex;
         flex-direction: row;
     }
-    
-        .oferta img{
-        width: 60%;
+    .oferta__flex{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 30px;
     }
+    
     .contactanos{
         height: 100px;
     }

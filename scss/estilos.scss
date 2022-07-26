@@ -1,0 +1,295 @@
+@import "variables";
+
+*{
+    padding: 0;
+    margin: 0;
+    display: flex-box;
+}
+/* Index.html */
+body{
+    background-color: $Color-body;
+}
+/* Header */
+.encabezado{
+    background: linear-gradient(to bottom,rgb(152, 193, 231), black, grey);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    & img{
+        width: 900px;
+        height: 300px;
+        border: 10px;
+    
+    }
+    &__img{
+        display: flex;
+        justify-content: center;
+    }
+    
+
+}
+.menu{
+    display: flex;
+    justify-content: flex-start;
+    &__contenedor{
+        background-color: rgb(49, 66, 66);
+    }
+    & ul{
+        display: flex;
+    
+    }
+    & li{
+    margin: 5px;
+    text-decoration:none;
+    list-style:none;
+    padding: 1rem;
+    }
+    & a{
+        text-decoration: none;
+        color: blanchedalmond;
+        text-transform: uppercase;
+    }
+    
+
+}
+nav li:hover{
+    background-color: grey;
+    color: black;
+}
+nav a:hover{
+    color: black;
+}
+ .container-fluid {
+    display:flex ;
+    justify-content:left;
+    font-weight: 700;
+ }
+ .navbar{
+    background-color: transparent;
+    text-align: center;
+    & a{
+        color: rgb(2, 2, 2);
+     }
+ }
+
+
+ .card {
+    background-color: brown !important;
+    margin-bottom: 40px;
+ }
+ .btn-primary{
+    background-color: blueviolet !important;
+ }
+.etiqueta__padre{
+    display: grid;
+    grid-template-areas: 
+    "encabezado encabezado encabezado"
+    "main main oferta"
+    "contactanos contactanos contactanos";
+    grid-template-columns: auto auto 300px;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+
+}
+header{
+    grid-area: encabezado;
+}
+main{
+   grid-area: main;
+}
+aside{
+    grid-area: oferta;
+}
+footer{
+    grid-area:contactanos ;
+}
+/* main */
+.main{
+    background: linear-gradient(to bottom,black, grey, black);
+    margin: 15px;
+    & img{
+        width: 30%;
+        margin-bottom: 100px;
+    /*     transform: translate(300px, 1px);
+        transform: rotate(-10deg); */
+    
+    }
+    
+}
+.carousel{
+    width: 50%;
+    &__flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.nosotros__texto{
+   line-height: 30px;
+   font-style: italic;
+   font-weight: 900;
+   padding: 3rem; 
+   color: $Color-tex;
+   font-size: $Fontzise-text;
+   margin-bottom: 100px;
+}
+.nosotros__img{
+    display: flex;
+    justify-content: center;
+
+}
+/* aside */
+.oferta{
+    background: $ColorBody-aside;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+       }
+       &__imagenes{
+        display: flex;
+        flex-direction: column;
+    }
+    &__titulo{
+        text-align: center;
+        margin: 1rem;
+        color: white;
+        margin-top: 100px;
+    
+    }
+    
+}
+/* .oferta img{
+    width: 80%;
+   display: block;
+   margin: auto;
+   margin-bottom: 1rem;
+    border: solid 7px;
+    animation-name: oferta;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-delay: 0ms;
+    
+}
+@keyframes oferta {
+    0%{
+        border: solid 7px black;
+        transform: rotate(15deg);
+    }
+    25%{
+        border: double 10px rgb(90, 43, 43);
+    }
+    50%{
+        border: dashed 15px rgb(163, 91, 91);
+    }
+    75%{
+        border: solid 10px rgb(211, 13, 13);
+    }
+    100%{
+        border: dashed 7px cornflowerblue;
+    }
+}
+ */
+
+/* footer */
+.contactanos{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    float: bottom;
+    height: 3rem;
+    & ul{
+        display: flex;
+        align-items: center;
+    
+    
+    }
+    & li{
+        list-style: none;
+    }
+    & a{
+        text-decoration: none;
+        margin: 50px;
+        color: white;
+    }
+    
+}
+/* GALERIA */
+.main__titulo{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 70px;
+
+}
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    & img{
+        margin: 20px;
+        width: 40%;
+        margin-bottom: 80px;
+    
+    }
+    
+}
+/* REMODELACIONES */
+.remodelaciones__h1{
+    font-weight: 900;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+}
+#carouselExampleControls img{
+    width: 10%;
+}
+@media only screen and (max-width:481px) {
+    /* INDEX */
+    .nosotros__texto{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .nosotros__img{
+        padding: 3rem;
+        margin-bottom: 30px;
+    }
+    .main img{
+        border: solid black 7px;
+        width: 80%;
+    }
+    .etiqueta__padre{
+        display: grid;
+        grid-template-areas: 
+        "encabezado encabezado"
+        "main main"
+        "oferta oferta"
+        "contactanos contactanos";
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-row-gap: 15px;
+    
+    }
+    .oferta__imagenes{
+        display: flex;
+        flex-direction: row;
+    }
+    .oferta__flex{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 30px;
+    }
+    
+    .contactanos{
+        height: 100px;
+    }
+}

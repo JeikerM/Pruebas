@@ -1,0 +1,23 @@
+/* footer */
+.contactanos{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    float: bottom;
+    height: 3rem;
+    & ul{
+        display: flex;
+        align-items: center;
+    
+    
+    }
+    & li{
+        list-style: none;
+    }
+    & a{
+        text-decoration: none;
+        margin: 50px;
+        color: white;
+    }
+    
+}

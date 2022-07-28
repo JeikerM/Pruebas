@@ -1,0 +1,20 @@
+/* GALERIA */
+.main__titulo{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 70px;
+
+}
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    & img{
+        margin: 20px;
+        width: 40%;
+        margin-bottom: 80px;
+    
+    }
+    
+}

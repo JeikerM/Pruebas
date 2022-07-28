@@ -1,0 +1,19 @@
+/* Header */
+.encabezado{
+    background: linear-gradient(to bottom,rgb(152, 193, 231), black, grey);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    & img{
+        width: 900px;
+        height: 300px;
+        border: 10px;
+    
+    }
+    &__img{
+        display: flex;
+        justify-content: center;
+    }
+    
+
+}

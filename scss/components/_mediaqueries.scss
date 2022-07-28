@@ -1,0 +1,42 @@
+@media only screen and (max-width:481px) {
+    /* INDEX */
+    .nosotros__texto{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .nosotros__img{
+        padding: 3rem;
+        margin-bottom: 30px;
+    }
+    .main img{
+        border: solid black 7px;
+        width: 80%;
+    }
+    .etiqueta__padre{
+        display: grid;
+        grid-template-areas: 
+        "encabezado encabezado"
+        "main main"
+        "oferta oferta"
+        "contactanos contactanos";
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-row-gap: 15px;
+    
+    }
+    .oferta__imagenes{
+        display: flex;
+        flex-direction: row;
+    }
+    .oferta__flex{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 30px;
+    }
+    
+    .contactanos{
+        height: 100px;
+    }
+}

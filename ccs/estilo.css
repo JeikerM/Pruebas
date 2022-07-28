@@ -2,10 +2,127 @@
   padding: 0;
   margin: 0;
   display: flex-box; }
-
-/* Index.html */
 body {
   background-color: grey; }
+.card {
+  background-color: brown !important;
+  margin-bottom: 40px; }
+
+.btn-primary {
+  background-color: blueviolet !important; }
+
+.carousel {
+  width: 50%; }
+  .carousel__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+#carouselExampleControls img {
+  width: 10%; }
+
+header {
+  grid-area: encabezado; }
+
+main {
+  grid-area: main; }
+
+aside {
+  grid-area: oferta; }
+
+footer {
+  grid-area: contactanos; }
+
+.etiqueta__padre {
+  display: grid;
+  grid-template-areas: "encabezado encabezado encabezado"
+ "main main oferta"
+ "contactanos contactanos contactanos";
+  grid-template-columns: auto auto 300px;
+  grid-template-rows: auto auto auto;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px; }
+
+.nosotros__texto {
+  line-height: 30px;
+  font-style: italic;
+  font-weight: 900;
+  padding: 3rem;
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 100px; }
+
+.nosotros__img {
+  display: flex;
+  justify-content: center; }
+
+.main {
+  background: linear-gradient(to bottom, black, grey, black);
+  margin: 15px; }
+  .main img {
+    width: 30%;
+    margin-bottom: 100px;
+    /*     transform: translate(300px, 1px);
+        transform: rotate(-10deg); */ }
+
+/* aside */
+.oferta {
+  background: linear-gradient(to bottom, black, grey);
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .oferta__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .oferta__imagenes {
+    display: flex;
+    flex-direction: column; }
+  .oferta__titulo {
+    text-align: center;
+    margin: 1rem;
+    color: white;
+    margin-top: 100px; }
+
+/* GALERIA */
+.main__titulo {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  margin-bottom: 70px; }
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .galeria img {
+    margin: 20px;
+    width: 40%;
+    margin-bottom: 80px; }
+
+.remodelaciones__h1 {
+  font-weight: 900;
+  font-size: 2em;
+  text-align: center;
+  color: white; }
+
+/* footer */
+.contactanos {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  float: bottom;
+  height: 3rem; }
+  .contactanos ul {
+    display: flex;
+    align-items: center; }
+  .contactanos li {
+    list-style: none; }
+  .contactanos a {
+    text-decoration: none;
+    margin: 50px;
+    color: white; }
 
 /* Header */
 .encabezado {
@@ -21,6 +138,7 @@ body {
     display: flex;
     justify-content: center; }
 
+/* MENU */
 .menu {
   display: flex;
   justify-content: flex-start; }
@@ -56,157 +174,6 @@ nav a:hover {
   .navbar a {
     color: #020202; }
 
-.card {
-  background-color: brown !important;
-  margin-bottom: 40px; }
-
-.btn-primary {
-  background-color: blueviolet !important; }
-
-.etiqueta__padre {
-  display: grid;
-  grid-template-areas: "encabezado encabezado encabezado" "main main oferta" "contactanos contactanos contactanos";
-  grid-template-columns: auto auto 300px;
-  grid-template-rows: auto auto auto;
-  grid-column-gap: 15px;
-  grid-row-gap: 15px; }
-
-header {
-  grid-area: encabezado; }
-
-main {
-  grid-area: main; }
-
-aside {
-  grid-area: oferta; }
-
-footer {
-  grid-area: contactanos; }
-
-/* main */
-.main {
-  background: linear-gradient(to bottom, black, grey, black);
-  margin: 15px; }
-  .main img {
-    width: 30%;
-    margin-bottom: 100px;
-    /*     transform: translate(300px, 1px);
-        transform: rotate(-10deg); */ }
-
-.carousel {
-  width: 50%; }
-  .carousel__flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-
-.nosotros__texto {
-  line-height: 30px;
-  font-style: italic;
-  font-weight: 900;
-  padding: 3rem;
-  color: white;
-  font-size: 2rem;
-  margin-bottom: 100px; }
-
-.nosotros__img {
-  display: flex;
-  justify-content: center; }
-
-/* aside */
-.oferta {
-  background: linear-gradient(to bottom, black, grey);
-  margin: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-  .oferta__flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .oferta__imagenes {
-    display: flex;
-    flex-direction: column; }
-  .oferta__titulo {
-    text-align: center;
-    margin: 1rem;
-    color: white;
-    margin-top: 100px; }
-
-/* .oferta img{
-    width: 80%;
-   display: block;
-   margin: auto;
-   margin-bottom: 1rem;
-    border: solid 7px;
-    animation-name: oferta;
-    animation-iteration-count: infinite;
-    animation-duration: 4s;
-    animation-delay: 0ms;
-    
-}
-@keyframes oferta {
-    0%{
-        border: solid 7px black;
-        transform: rotate(15deg);
-    }
-    25%{
-        border: double 10px rgb(90, 43, 43);
-    }
-    50%{
-        border: dashed 15px rgb(163, 91, 91);
-    }
-    75%{
-        border: solid 10px rgb(211, 13, 13);
-    }
-    100%{
-        border: dashed 7px cornflowerblue;
-    }
-}
- */
-/* footer */
-.contactanos {
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  float: bottom;
-  height: 3rem; }
-  .contactanos ul {
-    display: flex;
-    align-items: center; }
-  .contactanos li {
-    list-style: none; }
-  .contactanos a {
-    text-decoration: none;
-    margin: 50px;
-    color: white; }
-
-/* GALERIA */
-.main__titulo {
-  text-align: center;
-  margin-top: 20px;
-  color: white;
-  margin-bottom: 70px; }
-
-.galeria {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
-  .galeria img {
-    margin: 20px;
-    width: 40%;
-    margin-bottom: 80px; }
-
-/* REMODELACIONES */
-.remodelaciones__h1 {
-  font-weight: 900;
-  font-size: 2em;
-  text-align: center;
-  color: white; }
-
-#carouselExampleControls img {
-  width: 10%; }
-
 @media only screen and (max-width: 481px) {
   /* INDEX */
   .nosotros__texto {
@@ -220,7 +187,10 @@ footer {
     width: 80%; }
   .etiqueta__padre {
     display: grid;
-    grid-template-areas: "encabezado encabezado" "main main" "oferta oferta" "contactanos contactanos";
+    grid-template-areas: "encabezado encabezado"
+ "main main"
+ "oferta oferta"
+ "contactanos contactanos";
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
     grid-row-gap: 15px; }

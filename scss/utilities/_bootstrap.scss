@@ -1,0 +1,18 @@
+.card {
+    background-color: brown !important;
+    margin-bottom: 40px;
+ }
+ .btn-primary{
+    background-color: blueviolet !important;
+ }
+ .carousel{
+    width: 50%;
+    &__flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+#carouselExampleControls img{
+    width: 10%;
+}
